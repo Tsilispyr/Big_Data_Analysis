@@ -1,0 +1,7 @@
+MATCH (p:Play {title: "THE TRAGEDY OF HAMLET, PRINCE OF DENMARK"})-[:HAS_ACT]->(:Act)-[:HAS_SCENE]->(:Scene)-[:HAS_LINE]->(l:Line)
+RETURN count(l) AS HamletLineCount;
+
+
+//Αποτέλεσμα:
+    // HamletLineCount
+    // 3920

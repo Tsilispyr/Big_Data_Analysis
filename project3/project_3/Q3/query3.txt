@@ -1,0 +1,749 @@
+MATCH (c:Character {name: "MACBETH"})-[:SPEAKS]->(l:Line)
+RETURN l.play AS Play, l.act AS Act, l.scene AS Scene, l.lineNum AS LineNumber, l.text AS Text
+ORDER BY l.play, l.act, l.scene, l.lineNum;
+
+
+//Αποτέλεσμα
+    // Play	Act	Scene	LineNumber	Text
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE III	96344	So foul and fair a day I have not seen.
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE III	96358	Speak, if you can;—what are you?
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE III	96405	Stay, you imperfect speakers, tell me more.
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE III	96406	By Sinel’s death I know I am Thane of Glamis;
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE III	96407	But how of Cawdor? The Thane of Cawdor lives,
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE III	96408	A prosperous gentleman; and to be king
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE III	96409	Stands not within the prospect of belief,
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE III	96410	No more than to be Cawdor. Say from whence
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE III	96411	You owe this strange intelligence? or why
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE III	96412	Upon this blasted heath you stop our way
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE III	96413	With such prophetic greeting?—Speak, I charge you.
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE III	96422	Into the air; and what seem’d corporal,
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE III	96423	Melted as breath into the wind.
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE III	96424	Would they had stay’d!
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE III	96432	Your children shall be kings.
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE III	96438	And Thane of Cawdor too; went it not so?
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE III	96475	The Thane of Cawdor lives: why do you dress me
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE III	96476	In borrow’d robes?
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE III	96489	[_Aside._] Glamis, and Thane of Cawdor:
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE III	96490	The greatest is behind. [_To Ross and Angus._] Thanks for your pains.
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE III	96491	[_To Banquo._] Do you not hope your children shall be kings,
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE III	96492	When those that gave the Thane of Cawdor to me
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE III	96493	Promis’d no less to them?
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE III	96506	[_Aside._] Two truths are told,
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE III	96507	As happy prologues to the swelling act
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE III	96508	Of the imperial theme.—I thank you, gentlemen.—
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE III	96509	[_Aside._] This supernatural soliciting
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE III	96510	Cannot be ill; cannot be good. If ill,
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE III	96511	Why hath it given me earnest of success,
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE III	96512	Commencing in a truth? I am Thane of Cawdor:
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE III	96513	If good, why do I yield to that suggestion
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE III	96514	Whose horrid image doth unfix my hair,
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE III	96515	And make my seated heart knock at my ribs,
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE III	96516	Against the use of nature? Present fears
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE III	96517	Are less than horrible imaginings.
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE III	96518	My thought, whose murder yet is but fantastical,
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE III	96519	Shakes so my single state of man
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE III	96520	That function is smother’d in surmise,
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE III	96521	And nothing is but what is not.
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE III	96527	[_Aside._] If chance will have me king, why, chance may crown me
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE III	96528	Without my stir.
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE III	96536	[_Aside._] Come what come may,
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE III	96537	Time and the hour runs through the roughest day.
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE III	96543	Give me your favour. My dull brain was wrought
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE III	96544	With things forgotten. Kind gentlemen, your pains
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE III	96545	Are register’d where every day I turn
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE III	96546	The leaf to read them.—Let us toward the King.—
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE III	96547	Think upon what hath chanc’d; and at more time,
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE III	96548	The interim having weigh’d it, let us speak
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE III	96549	Our free hearts each to other.
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE III	96555	Till then, enough.—Come, friends.
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE IV	96561	Flourish. Enter Duncan, Malcolm, Donalbain, Lennox and Attendants.
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE IV	96597	The service and the loyalty I owe,
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE IV	96598	In doing it, pays itself. Your Highness’ part
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE IV	96599	Is to receive our duties: and our duties
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE IV	96600	Are to your throne and state, children and servants;
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE IV	96601	Which do but what they should, by doing everything
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE IV	96602	Safe toward your love and honour.
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE IV	96630	The rest is labour, which is not us’d for you:
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE IV	96631	I’ll be myself the harbinger, and make joyful
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE IV	96632	The hearing of my wife with your approach;
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE IV	96633	So, humbly take my leave.
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE IV	96639	[_Aside._] The Prince of Cumberland!—That is a step
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE IV	96640	On which I must fall down, or else o’erleap,
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE IV	96641	For in my way it lies. Stars, hide your fires!
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE IV	96642	Let not light see my black and deep desires.
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE IV	96643	The eye wink at the hand, yet let that be,
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE IV	96644	Which the eye fears, when it is done, to see.
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE V	96741	My dearest love,
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE V	96742	Duncan comes here tonight.
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE V	96748	Tomorrow, as he purposes.
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE V	96764	We will speak further.
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE VII	96841	If it were done when ’tis done, then ’twere well
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE VII	96842	It were done quickly. If th’ assassination
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE VII	96843	Could trammel up the consequence, and catch
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE VII	96844	With his surcease success; that but this blow
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE VII	96845	Might be the be-all and the end-all—here,
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE VII	96846	But here, upon this bank and shoal of time,
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE VII	96847	We’d jump the life to come. But in these cases
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE VII	96848	We still have judgement here; that we but teach
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE VII	96849	Bloody instructions, which being taught, return
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE VII	96850	To plague th’ inventor. This even-handed justice
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE VII	96851	Commends th’ ingredience of our poison’d chalice
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE VII	96852	To our own lips. He’s here in double trust:
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE VII	96853	First, as I am his kinsman and his subject,
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE VII	96854	Strong both against the deed; then, as his host,
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE VII	96855	Who should against his murderer shut the door,
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE VII	96856	Not bear the knife myself. Besides, this Duncan
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE VII	96857	Hath borne his faculties so meek, hath been
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE VII	96858	So clear in his great office, that his virtues
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE VII	96859	Will plead like angels, trumpet-tongued, against
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE VII	96860	The deep damnation of his taking-off;
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE VII	96861	And pity, like a naked new-born babe,
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE VII	96862	Striding the blast, or heaven’s cherubin, hors’d
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE VII	96863	Upon the sightless couriers of the air,
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE VII	96864	Shall blow the horrid deed in every eye,
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE VII	96865	That tears shall drown the wind.—I have no spur
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE VII	96866	To prick the sides of my intent, but only
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE VII	96867	Vaulting ambition, which o’erleaps itself
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE VII	96868	And falls on th’ other—
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE VII	96870	Enter Lady Macbeth.
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE VII	96872	How now! what news?
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE VII	96878	Hath he ask’d for me?
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE VII	96884	We will proceed no further in this business:
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE VII	96885	He hath honour’d me of late; and I have bought
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE VII	96886	Golden opinions from all sorts of people,
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE VII	96887	Which would be worn now in their newest gloss,
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE VII	96888	Not cast aside so soon.
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE VII	96904	Pr’ythee, peace!
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE VII	96905	I dare do all that may become a man;
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE VII	96906	Who dares do more is none.
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE VII	96924	If we should fail?
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE VII	96943	Bring forth men-children only;
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE VII	96944	For thy undaunted mettle should compose
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE VII	96945	Nothing but males. Will it not be receiv’d,
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE VII	96946	When we have mark’d with blood those sleepy two
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE VII	96947	Of his own chamber, and us’d their very daggers,
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE VII	96948	That they have done’t?
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE VII	96956	I am settled, and bend up
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE VII	96957	Each corporal agent to this terrible feat.
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE VII	96958	Away, and mock the time with fairest show:
+    // THE TRAGEDY OF MACBETH	ACT I	SCENE VII	96959	False face must hide what the false heart doth know.
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE I	96968	Enter Banquo and Fleance with a torch before him.
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE I	96995	A friend.
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE I	97006	Being unprepar’d,
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE I	97007	Our will became the servant to defect,
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE I	97008	Which else should free have wrought.
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE I	97016	I think not of them:
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE I	97017	Yet, when we can entreat an hour to serve,
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE I	97018	We would spend it in some words upon that business,
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE I	97019	If you would grant the time.
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE I	97025	If you shall cleave to my consent, when ’tis,
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE I	97026	It shall make honour for you.
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE I	97035	Good repose the while!
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE I	97043	Go bid thy mistress, when my drink is ready,
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE I	97044	She strike upon the bell. Get thee to bed.
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE I	97048	Is this a dagger which I see before me,
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE I	97049	The handle toward my hand? Come, let me clutch thee:—
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE I	97050	I have thee not, and yet I see thee still.
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE I	97051	Art thou not, fatal vision, sensible
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE I	97052	To feeling as to sight? or art thou but
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE I	97053	A dagger of the mind, a false creation,
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE I	97054	Proceeding from the heat-oppressed brain?
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE I	97055	I see thee yet, in form as palpable
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE I	97056	As this which now I draw.
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE I	97057	Thou marshall’st me the way that I was going;
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE I	97058	And such an instrument I was to use.
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE I	97059	Mine eyes are made the fools o’ the other senses,
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE I	97060	Or else worth all the rest: I see thee still;
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE I	97061	And on thy blade and dudgeon, gouts of blood,
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE I	97062	Which was not so before.—There’s no such thing.
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE I	97063	It is the bloody business which informs
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE I	97064	Thus to mine eyes.—Now o’er the one half-world
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE I	97065	Nature seems dead, and wicked dreams abuse
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE I	97066	The curtain’d sleep. Witchcraft celebrates
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE I	97067	Pale Hecate’s off’rings; and wither’d murder,
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE I	97068	Alarum’d by his sentinel, the wolf,
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE I	97069	Whose howl’s his watch, thus with his stealthy pace,
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE I	97070	With Tarquin’s ravishing strides, towards his design
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE I	97071	Moves like a ghost.—Thou sure and firm-set earth,
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE I	97072	Hear not my steps, which way they walk, for fear
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE I	97073	Thy very stones prate of my whereabout,
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE I	97074	And take the present horror from the time,
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE I	97075	Which now suits with it.—Whiles I threat, he lives.
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE I	97076	Words to the heat of deeds too cold breath gives.
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE I	97080	I go, and it is done. The bell invites me.
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE I	97081	Hear it not, Duncan, for it is a knell
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE I	97082	That summons thee to heaven or to hell.
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE II	97088	Enter Lady Macbeth.
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE II	97101	[_Within._] Who’s there?—what, ho!
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE II	97113	I have done the deed.—Didst thou not hear a noise?
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE II	97120	When?
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE II	97126	As I descended?
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE II	97132	Hark!—Who lies i’ th’ second chamber?
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE II	97138	This is a sorry sight.
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE II	97146	There’s one did laugh in’s sleep, and one cried, “Murder!”
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE II	97147	That they did wake each other: I stood and heard them.
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE II	97148	But they did say their prayers, and address’d them
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE II	97149	Again to sleep.
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE II	97155	One cried, “God bless us!” and, “Amen,” the other,
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE II	97156	As they had seen me with these hangman’s hands.
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE II	97157	List’ning their fear, I could not say “Amen,”
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE II	97158	When they did say, “God bless us.”
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE II	97164	But wherefore could not I pronounce “Amen”?
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE II	97165	I had most need of blessing, and “Amen”
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE II	97166	Stuck in my throat.
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE II	97173	Methought I heard a voice cry, “Sleep no more!
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE II	97174	Macbeth does murder sleep,”—the innocent sleep;
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE II	97175	Sleep that knits up the ravell’d sleave of care,
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE II	97176	The death of each day’s life, sore labour’s bath,
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE II	97177	Balm of hurt minds, great nature’s second course,
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE II	97178	Chief nourisher in life’s feast.
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE II	97184	Still it cried, “Sleep no more!” to all the house:
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE II	97185	“Glamis hath murder’d sleep, and therefore Cawdor
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE II	97186	Shall sleep no more. Macbeth shall sleep no more!”
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE II	97198	I’ll go no more:
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE II	97199	I am afraid to think what I have done;
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE II	97200	Look on’t again I dare not.
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE II	97213	Whence is that knocking?
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE II	97214	How is’t with me, when every noise appals me?
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE II	97215	What hands are here? Ha, they pluck out mine eyes!
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE II	97216	Will all great Neptune’s ocean wash this blood
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE II	97217	Clean from my hand? No, this my hand will rather
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE II	97218	The multitudinous seas incarnadine,
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE II	97219	Making the green one red.
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE II	97221	Enter Lady Macbeth.
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE II	97235	To know my deed, ’twere best not know myself. [_Knocking within._]
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE II	97236	Wake Duncan with thy knocking! I would thou couldst!
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE III	97242	Enter a Porter. Knocking within.
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE III	97304	Good morrow, both!
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE III	97310	Not yet.
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE III	97317	I’ll bring you to him.
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE III	97324	The labour we delight in physics pain.
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE III	97325	This is the door.
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE III	97337	He does. He did appoint so.
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE III	97350	’Twas a rough night.
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE III	97372	What is’t you say? the life?
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE III	97425	Had I but died an hour before this chance,
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE III	97426	I had liv’d a blessed time; for, from this instant
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE III	97427	There’s nothing serious in mortality.
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE III	97428	All is but toys: renown and grace is dead;
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE III	97429	The wine of life is drawn, and the mere lees
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE III	97430	Is left this vault to brag of.
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE III	97432	Enter Malcolm and Donalbain.
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE III	97438	You are, and do not know’t:
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE III	97439	The spring, the head, the fountain of your blood
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE III	97440	Is stopp’d; the very source of it is stopp’d.
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE III	97456	O, yet I do repent me of my fury,
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE III	97457	That I did kill them.
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE III	97463	Who can be wise, amaz’d, temperate, and furious,
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE III	97464	Loyal and neutral, in a moment? No man:
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE III	97465	Th’ expedition of my violent love
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE III	97466	Outrun the pauser, reason. Here lay Duncan,
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE III	97467	His silver skin lac’d with his golden blood;
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE III	97468	And his gash’d stabs look’d like a breach in nature
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE III	97469	For ruin’s wasteful entrance: there, the murderers,
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE III	97470	Steep’d in the colours of their trade, their daggers
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE III	97471	Unmannerly breech’d with gore. Who could refrain,
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE III	97472	That had a heart to love, and in that heart
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE III	97473	Courage to make’s love known?
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE III	97514	Let’s briefly put on manly readiness,
+    // THE TRAGEDY OF MACBETH	ACT II	SCENE III	97515	And meet i’ th’ hall together.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97669	Here’s our chief guest.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97677	Tonight we hold a solemn supper, sir,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97678	And I’ll request your presence.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97687	Ride you this afternoon?
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97693	We should have else desir’d your good advice
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97694	(Which still hath been both grave and prosperous)
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97695	In this day’s council; but we’ll take tomorrow.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97696	Is’t far you ride?
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97705	Fail not our feast.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97711	We hear our bloody cousins are bestow’d
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97712	In England and in Ireland; not confessing
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97713	Their cruel parricide, filling their hearers
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97714	With strange invention. But of that tomorrow,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97715	When therewithal we shall have cause of state
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97716	Craving us jointly. Hie you to horse: adieu,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97717	Till you return at night. Goes Fleance with you?
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97723	I wish your horses swift and sure of foot;
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97724	And so I do commend you to their backs.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97725	Farewell.—
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97729	Let every man be master of his time
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97730	Till seven at night; to make society
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97731	The sweeter welcome, we will keep ourself
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97732	Till supper time alone: while then, God be with you.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97736	Sirrah, a word with you. Attend those men
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97737	Our pleasure?
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97743	Bring them before us.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97747	To be thus is nothing,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97748	But to be safely thus. Our fears in Banquo
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97749	Stick deep, and in his royalty of nature
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97750	Reigns that which would be fear’d: ’tis much he dares;
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97751	And, to that dauntless temper of his mind,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97752	He hath a wisdom that doth guide his valour
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97753	To act in safety. There is none but he
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97754	Whose being I do fear: and under him
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97755	My genius is rebuk’d; as, it is said,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97756	Mark Antony’s was by Caesar. He chid the sisters
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97757	When first they put the name of king upon me,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97758	And bade them speak to him; then, prophet-like,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97759	They hail’d him father to a line of kings:
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97760	Upon my head they plac’d a fruitless crown,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97761	And put a barren sceptre in my gripe,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97762	Thence to be wrench’d with an unlineal hand,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97763	No son of mine succeeding. If’t be so,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97764	For Banquo’s issue have I fil’d my mind;
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97765	For them the gracious Duncan have I murder’d;
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97766	Put rancours in the vessel of my peace
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97767	Only for them; and mine eternal jewel
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97768	Given to the common enemy of man,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97769	To make them kings, the seed of Banquo kings!
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97770	Rather than so, come, fate, into the list,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97771	And champion me to th’ utterance!—Who’s there?—
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97773	Enter Servant with two Murderers.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97775	Now go to the door, and stay there till we call.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97779	Was it not yesterday we spoke together?
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97785	Well then, now
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97786	Have you consider’d of my speeches? Know
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97787	That it was he, in the times past, which held you
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97788	So under fortune, which you thought had been
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97789	Our innocent self? This I made good to you
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97790	In our last conference, pass’d in probation with you
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97791	How you were borne in hand, how cross’d, the instruments,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97792	Who wrought with them, and all things else that might
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97793	To half a soul and to a notion craz’d
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97794	Say, “Thus did Banquo.”
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97800	I did so; and went further, which is now
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97801	Our point of second meeting. Do you find
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97802	Your patience so predominant in your nature,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97803	That you can let this go? Are you so gospell’d,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97804	To pray for this good man and for his issue,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97805	Whose heavy hand hath bow’d you to the grave,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97806	And beggar’d yours forever?
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97812	Ay, in the catalogue ye go for men;
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97813	As hounds, and greyhounds, mongrels, spaniels, curs,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97814	Shoughs, water-rugs, and demi-wolves are clept
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97815	All by the name of dogs: the valu’d file
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97816	Distinguishes the swift, the slow, the subtle,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97817	The housekeeper, the hunter, every one
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97818	According to the gift which bounteous nature
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97819	Hath in him clos’d; whereby he does receive
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97820	Particular addition, from the bill
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97821	That writes them all alike: and so of men.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97822	Now, if you have a station in the file,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97823	Not i’ th’ worst rank of manhood, say’t;
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97824	And I will put that business in your bosoms,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97825	Whose execution takes your enemy off,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97826	Grapples you to the heart and love of us,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97827	Who wear our health but sickly in his life,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97828	Which in his death were perfect.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97843	Both of you
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97844	Know Banquo was your enemy.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97850	So is he mine; and in such bloody distance,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97851	That every minute of his being thrusts
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97852	Against my near’st of life; and though I could
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97853	With barefac’d power sweep him from my sight,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97854	And bid my will avouch it, yet I must not,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97855	For certain friends that are both his and mine,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97856	Whose loves I may not drop, but wail his fall
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97857	Who I myself struck down: and thence it is
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97858	That I to your assistance do make love,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97859	Masking the business from the common eye
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97860	For sundry weighty reasons.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97870	Your spirits shine through you. Within this hour at most,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97871	I will advise you where to plant yourselves,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97872	Acquaint you with the perfect spy o’ th’ time,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97873	The moment on’t; for’t must be done tonight
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97874	And something from the palace; always thought
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97875	That I require a clearness. And with him
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97876	(To leave no rubs nor botches in the work)
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97877	Fleance his son, that keeps him company,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97878	Whose absence is no less material to me
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97879	Than is his father’s, must embrace the fate
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97880	Of that dark hour. Resolve yourselves apart.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97881	I’ll come to you anon.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97887	I’ll call upon you straight: abide within.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97891	It is concluded. Banquo, thy soul’s flight,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE I	97892	If it find heaven, must find it out tonight.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE II	97898	Enter Lady Macbeth and a Servant.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE II	97930	We have scorch’d the snake, not kill’d it.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE II	97931	She’ll close, and be herself; whilst our poor malice
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE II	97932	Remains in danger of her former tooth.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE II	97933	But let the frame of things disjoint,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE II	97934	Both the worlds suffer,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE II	97935	Ere we will eat our meal in fear, and sleep
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE II	97936	In the affliction of these terrible dreams
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE II	97937	That shake us nightly. Better be with the dead,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE II	97938	Whom we, to gain our peace, have sent to peace,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE II	97939	Than on the torture of the mind to lie
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE II	97940	In restless ecstasy. Duncan is in his grave;
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE II	97941	After life’s fitful fever he sleeps well;
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE II	97942	Treason has done his worst: nor steel, nor poison,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE II	97943	Malice domestic, foreign levy, nothing
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE II	97944	Can touch him further.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE II	97952	So shall I, love; and so, I pray, be you.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE II	97953	Let your remembrance apply to Banquo;
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE II	97954	Present him eminence, both with eye and tongue:
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE II	97955	Unsafe the while, that we
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE II	97956	Must lave our honours in these flattering streams,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE II	97957	And make our faces vizards to our hearts,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE II	97958	Disguising what they are.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE II	97964	O, full of scorpions is my mind, dear wife!
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE II	97965	Thou know’st that Banquo, and his Fleance, lives.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE II	97971	There’s comfort yet; they are assailable.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE II	97972	Then be thou jocund. Ere the bat hath flown
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE II	97973	His cloister’d flight, ere to black Hecate’s summons
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE II	97974	The shard-born beetle, with his drowsy hums,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE II	97975	Hath rung night’s yawning peal, there shall be done
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE II	97976	A deed of dreadful note.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE II	97982	Be innocent of the knowledge, dearest chuck,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE II	97983	Till thou applaud the deed. Come, seeling night,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE II	97984	Scarf up the tender eye of pitiful day,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE II	97985	And with thy bloody and invisible hand
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE II	97986	Cancel and tear to pieces that great bond
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE II	97987	Which keeps me pale!—Light thickens; and the crow
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE II	97988	Makes wing to th’ rooky wood.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE II	97989	Good things of day begin to droop and drowse,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE II	97990	Whiles night’s black agents to their preys do rouse.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE II	97991	Thou marvell’st at my words: but hold thee still;
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE II	97992	Things bad begun make strong themselves by ill.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE II	97993	So, pr’ythee, go with me.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE III	97999	Enter three Murderers.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98086	You know your own degrees, sit down. At first
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98087	And last the hearty welcome.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98093	Ourself will mingle with society,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98094	And play the humble host.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98095	Our hostess keeps her state; but, in best time,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98096	We will require her welcome.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98105	See, they encounter thee with their hearts’ thanks.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98106	Both sides are even: here I’ll sit i’ th’ midst.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98108	Be large in mirth; anon we’ll drink a measure
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98109	The table round. There’s blood upon thy face.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98115	’Tis better thee without than he within.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98116	Is he dispatch’d?
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98122	Thou art the best o’ th’ cut-throats;
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98123	Yet he’s good that did the like for Fleance:
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98124	If thou didst it, thou art the nonpareil.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98131	Then comes my fit again: I had else been perfect;
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98132	Whole as the marble, founded as the rock,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98133	As broad and general as the casing air:
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98134	But now I am cabin’d, cribb’d, confin’d, bound in
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98135	To saucy doubts and fears. But Banquo’s safe?
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98143	Thanks for that.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98144	There the grown serpent lies; the worm that’s fled
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98145	Hath nature that in time will venom breed,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98146	No teeth for th’ present.—Get thee gone; tomorrow
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98147	We’ll hear, ourselves, again.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98162	Sweet remembrancer!—
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98163	Now, good digestion wait on appetite,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98164	And health on both!
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98170	Here had we now our country’s honour roof’d,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98171	Were the grac’d person of our Banquo present;
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98172	Who may I rather challenge for unkindness
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98173	Than pity for mischance!
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98181	The table’s full.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98187	Where?
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98193	Which of you have done this?
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98199	Thou canst not say I did it. Never shake
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98200	Thy gory locks at me.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98214	Ay, and a bold one, that dare look on that
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98215	Which might appal the devil.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98229	Pr’ythee, see there!
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98230	Behold! look! lo! how say you?
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98231	Why, what care I? If thou canst nod, speak too.—
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98232	If charnel houses and our graves must send
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98233	Those that we bury back, our monuments
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98234	Shall be the maws of kites.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98242	If I stand here, I saw him.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98248	Blood hath been shed ere now, i’ th’ olden time,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98249	Ere humane statute purg’d the gentle weal;
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98250	Ay, and since too, murders have been perform’d
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98251	Too terrible for the ear: the time has been,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98252	That, when the brains were out, the man would die,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98253	And there an end; but now they rise again,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98254	With twenty mortal murders on their crowns,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98255	And push us from our stools. This is more strange
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98256	Than such a murder is.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98263	I do forget.—
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98264	Do not muse at me, my most worthy friends.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98265	I have a strange infirmity, which is nothing
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98266	To those that know me. Come, love and health to all;
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98267	Then I’ll sit down.—Give me some wine, fill full.—
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98268	I drink to the general joy o’ th’ whole table,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98269	And to our dear friend Banquo, whom we miss:
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98270	Would he were here.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98272	Ghost rises again.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98274	To all, and him, we thirst,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98275	And all to all.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98281	Avaunt! and quit my sight! let the earth hide thee!
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98282	Thy bones are marrowless, thy blood is cold;
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98283	Thou hast no speculation in those eyes
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98284	Which thou dost glare with!
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98292	What man dare, I dare:
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98293	Approach thou like the rugged Russian bear,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98294	The arm’d rhinoceros, or th’ Hyrcan tiger;
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98295	Take any shape but that, and my firm nerves
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98296	Shall never tremble: or be alive again,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98297	And dare me to the desert with thy sword;
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98298	If trembling I inhabit then, protest me
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98299	The baby of a girl. Hence, horrible shadow!
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98300	Unreal mock’ry, hence!
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98304	Why, so;—being gone,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98305	I am a man again.—Pray you, sit still.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98312	Can such things be,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98313	And overcome us like a summer’s cloud,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98314	Without our special wonder? You make me strange
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98315	Even to the disposition that I owe,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98316	When now I think you can behold such sights,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98317	And keep the natural ruby of your cheeks,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98318	When mine are blanch’d with fear.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98339	It will have blood, they say, blood will have blood.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98340	Stones have been known to move, and trees to speak;
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98341	Augurs, and understood relations, have
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98342	By magot-pies, and choughs, and rooks, brought forth
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98343	The secret’st man of blood.—What is the night?
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98349	How say’st thou, that Macduff denies his person
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98350	At our great bidding?
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98356	I hear it by the way; but I will send.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98357	There’s not a one of them but in his house
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98358	I keep a servant fee’d. I will tomorrow
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98359	(And betimes I will) to the Weird Sisters:
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98360	More shall they speak; for now I am bent to know,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98361	By the worst means, the worst. For mine own good,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98362	All causes shall give way: I am in blood
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98363	Stepp’d in so far that, should I wade no more,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98364	Returning were as tedious as go o’er.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98365	Strange things I have in head, that will to hand,
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98366	Which must be acted ere they may be scann’d.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98372	Come, we’ll to sleep. My strange and self-abuse
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98373	Is the initiate fear that wants hard use.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE IV	98374	We are yet but young in deed.
+    // THE TRAGEDY OF MACBETH	ACT III	SCENE V	98380	Thunder. Enter the three Witches meeting Hecate.
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98589	How now, you secret, black, and midnight hags!
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98590	What is’t you do?
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98596	I conjure you, by that which you profess,
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98597	(Howe’er you come to know it) answer me:
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98598	Though you untie the winds, and let them fight
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98599	Against the churches; though the yesty waves
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98600	Confound and swallow navigation up;
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98601	Though bladed corn be lodg’d, and trees blown down;
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98602	Though castles topple on their warders’ heads;
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98603	Though palaces and pyramids do slope
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98604	Their heads to their foundations; though the treasure
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98605	Of nature’s germens tumble all together,
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98606	Even till destruction sicken, answer me
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98607	To what I ask you.
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98623	Call ’em, let me see ’em.
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98638	Tell me, thou unknown power,—
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98651	Whate’er thou art, for thy good caution, thanks;
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98652	Thou hast harp’d my fear aright.—But one word more.
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98664	Had I three ears, I’d hear thee.
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98674	Then live, Macduff: what need I fear of thee?
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98675	But yet I’ll make assurance double sure,
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98676	And take a bond of fate. Thou shalt not live;
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98677	That I may tell pale-hearted fear it lies,
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98678	And sleep in spite of thunder.
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98680	[_Thunder. An Apparition of a Child crowned, with a tree in his hand,
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98681	rises._]
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98683	What is this,
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98684	That rises like the issue of a king,
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98685	And wears upon his baby brow the round
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98686	And top of sovereignty?
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98701	That will never be:
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98702	Who can impress the forest; bid the tree
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98703	Unfix his earth-bound root? Sweet bodements, good!
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98704	Rebellious head, rise never till the wood
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98705	Of Birnam rise, and our high-plac’d Macbeth
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98706	Shall live the lease of nature, pay his breath
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98707	To time and mortal custom.—Yet my heart
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98708	Throbs to know one thing: tell me, if your art
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98709	Can tell so much, shall Banquo’s issue ever
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98710	Reign in this kingdom?
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98716	I will be satisfied: deny me this,
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98717	And an eternal curse fall on you! Let me know.
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98718	Why sinks that cauldron? and what noise is this?
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98739	Thou are too like the spirit of Banquo. Down!
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98740	Thy crown does sear mine eyeballs:—and thy hair,
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98741	Thou other gold-bound brow, is like the first.
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98742	A third is like the former.—Filthy hags!
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98743	Why do you show me this?—A fourth!—Start, eyes!
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98744	What, will the line stretch out to th’ crack of doom?
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98745	Another yet!—A seventh!—I’ll see no more:—
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98746	And yet the eighth appears, who bears a glass
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98747	Which shows me many more; and some I see
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98748	That twofold balls and treble sceptres carry.
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98749	Horrible sight!—Now I see ’tis true;
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98750	For the blood-bolter’d Banquo smiles upon me,
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98751	And points at them for his.—What! is this so?
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98766	Where are they? Gone?—Let this pernicious hour
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98767	Stand aye accursed in the calendar!—
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98768	Come in, without there!
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98770	Enter Lennox.
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98776	Saw you the Weird Sisters?
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98782	Came they not by you?
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98788	Infected be the air whereon they ride;
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98789	And damn’d all those that trust them!—I did hear
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98790	The galloping of horse: who was’t came by?
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98797	Fled to England!
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98803	Time, thou anticipat’st my dread exploits:
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98804	The flighty purpose never is o’ertook
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98805	Unless the deed go with it. From this moment
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98806	The very firstlings of my heart shall be
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98807	The firstlings of my hand. And even now,
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98808	To crown my thoughts with acts, be it thought and done:
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98809	The castle of Macduff I will surprise;
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98810	Seize upon Fife; give to th’ edge o’ th’ sword
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98811	His wife, his babes, and all unfortunate souls
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98812	That trace him in his line. No boasting like a fool;
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98813	This deed I’ll do before this purpose cool:
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98814	But no more sights!—Where are these gentlemen?
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE I	98815	Come, bring me where they are.
+    // THE TRAGEDY OF MACBETH	ACT IV	SCENE II	98821	Enter Lady Macduff her Son and Ross.
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99639	Bring me no more reports; let them fly all:
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99640	Till Birnam wood remove to Dunsinane
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99641	I cannot taint with fear. What’s the boy Malcolm?
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99642	Was he not born of woman? The spirits that know
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99643	All mortal consequences have pronounc’d me thus:
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99644	“Fear not, Macbeth; no man that’s born of woman
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99645	Shall e’er have power upon thee.”—Then fly, false thanes,
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99646	And mingle with the English epicures:
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99647	The mind I sway by, and the heart I bear,
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99648	Shall never sag with doubt nor shake with fear.
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99650	Enter a Servant.
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99652	The devil damn thee black, thou cream-fac’d loon!
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99653	Where gott’st thou that goose look?
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99659	Geese, villain?
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99665	Go prick thy face and over-red thy fear,
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99666	Thou lily-liver’d boy. What soldiers, patch?
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99667	Death of thy soul! those linen cheeks of thine
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99668	Are counsellors to fear. What soldiers, whey-face?
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99674	Take thy face hence.
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99678	Seyton!—I am sick at heart,
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99679	When I behold—Seyton, I say!—This push
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99680	Will cheer me ever or disseat me now.
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99681	I have liv’d long enough: my way of life
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99682	Is fall’n into the sere, the yellow leaf;
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99683	And that which should accompany old age,
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99684	As honour, love, obedience, troops of friends,
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99685	I must not look to have; but, in their stead,
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99686	Curses, not loud but deep, mouth-honour, breath,
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99687	Which the poor heart would fain deny, and dare not.
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99688	Seyton!—
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99690	Enter Seyton.
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99696	What news more?
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99702	I’ll fight till from my bones my flesh be hack’d.
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99703	Give me my armour.
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99709	I’ll put it on.
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99710	Send out more horses, skirr the country round;
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99711	Hang those that talk of fear. Give me mine armour.—
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99712	How does your patient, doctor?
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99720	Cure her of that:
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99721	Canst thou not minister to a mind diseas’d,
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99722	Pluck from the memory a rooted sorrow,
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99723	Raze out the written troubles of the brain,
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99724	And with some sweet oblivious antidote
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99725	Cleanse the stuff’d bosom of that perilous stuff
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99726	Which weighs upon the heart?
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99733	Throw physic to the dogs, I’ll none of it.
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99734	Come, put mine armour on; give me my staff:
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99735	Seyton, send out.—Doctor, the Thanes fly from me.—
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99736	Come, sir, despatch.—If thou couldst, doctor, cast
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99737	The water of my land, find her disease,
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99738	And purge it to a sound and pristine health,
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99739	I would applaud thee to the very echo,
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99740	That should applaud again.—Pull’t off, I say.—
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99741	What rhubarb, senna, or what purgative drug,
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99742	Would scour these English hence? Hear’st thou of them?
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99749	Bring it after me.—
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99750	I will not be afraid of death and bane,
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE III	99751	Till Birnam forest come to Dunsinane.
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE V	99820	Hang out our banners on the outward walls;
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE V	99821	The cry is still, “They come!” Our castle’s strength
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE V	99822	Will laugh a siege to scorn: here let them lie
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE V	99823	Till famine and the ague eat them up.
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE V	99824	Were they not forc’d with those that should be ours,
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE V	99825	We might have met them dareful, beard to beard,
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE V	99826	And beat them backward home.
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE V	99830	What is that noise?
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE V	99838	I have almost forgot the taste of fears.
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE V	99839	The time has been, my senses would have cool’d
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE V	99840	To hear a night-shriek; and my fell of hair
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE V	99841	Would at a dismal treatise rouse and stir
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE V	99842	As life were in’t. I have supp’d full with horrors;
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE V	99843	Direness, familiar to my slaughterous thoughts,
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE V	99844	Cannot once start me.
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE V	99846	Enter Seyton.
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE V	99848	Wherefore was that cry?
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE V	99854	She should have died hereafter.
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE V	99855	There would have been a time for such a word.
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE V	99856	Tomorrow, and tomorrow, and tomorrow,
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE V	99857	Creeps in this petty pace from day to day,
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE V	99858	To the last syllable of recorded time;
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE V	99859	And all our yesterdays have lighted fools
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE V	99860	The way to dusty death. Out, out, brief candle!
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE V	99861	Life’s but a walking shadow; a poor player,
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE V	99862	That struts and frets his hour upon the stage,
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE V	99863	And then is heard no more: it is a tale
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE V	99864	Told by an idiot, full of sound and fury,
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE V	99865	Signifying nothing.
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE V	99867	Enter a Messenger.
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE V	99869	Thou com’st to use thy tongue; thy story quickly.
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE V	99877	Well, say, sir.
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE V	99885	Liar, and slave!
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE V	99893	If thou speak’st false,
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE V	99894	Upon the next tree shalt thou hang alive,
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE V	99895	Till famine cling thee: if thy speech be sooth,
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE V	99896	I care not if thou dost for me as much.—
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE V	99897	I pull in resolution; and begin
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE V	99898	To doubt th’ equivocation of the fiend,
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE V	99899	That lies like truth. “Fear not, till Birnam wood
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE V	99900	Do come to Dunsinane;” and now a wood
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE V	99901	Comes toward Dunsinane.—Arm, arm, and out!—
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE V	99902	If this which he avouches does appear,
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE V	99903	There is nor flying hence nor tarrying here.
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE V	99904	I ’gin to be aweary of the sun,
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE V	99905	And wish th’ estate o’ th’ world were now undone.—
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE V	99906	Ring the alarum bell!—Blow, wind! come, wrack!
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE V	99907	At least we’ll die with harness on our back.
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE VI	99913	Enter, with drum and colours, Malcolm, old Siward, Macduff and their
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE VI	99914	Army, with boughs.
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE VII	99940	They have tied me to a stake. I cannot fly,
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE VII	99941	But, bear-like I must fight the course.—What’s he
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE VII	99942	That was not born of woman? Such a one
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE VII	99943	Am I to fear, or none.
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE VII	99945	Enter young Siward.
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE VII	99951	Thou’lt be afraid to hear it.
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE VII	99958	My name’s Macbeth.
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE VII	99965	No, nor more fearful.
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE VII	99974	Thou wast born of woman.
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE VII	99975	But swords I smile at, weapons laugh to scorn,
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE VII	99976	Brandish’d by man that’s of a woman born.
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE VII	99980	Alarums. Enter Macduff.
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE VIII	100019	Why should I play the Roman fool, and die
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE VIII	100020	On mine own sword? whiles I see lives, the gashes
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE VIII	100021	Do better upon them.
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE VIII	100023	Enter Macduff.
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE VIII	100029	Of all men else I have avoided thee:
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE VIII	100030	But get thee back; my soul is too much charg’d
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE VIII	100031	With blood of thine already.
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE VIII	100041	Thou losest labour:
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE VIII	100042	As easy mayst thou the intrenchant air
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE VIII	100043	With thy keen sword impress, as make me bleed:
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE VIII	100044	Let fall thy blade on vulnerable crests;
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE VIII	100045	I bear a charmed life, which must not yield
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE VIII	100046	To one of woman born.
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE VIII	100055	Accursed be that tongue that tells me so,
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE VIII	100056	For it hath cow’d my better part of man!
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE VIII	100057	And be these juggling fiends no more believ’d,
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE VIII	100058	That palter with us in a double sense;
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE VIII	100059	That keep the word of promise to our ear,
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE VIII	100060	And break it to our hope!—I’ll not fight with thee.
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE VIII	100070	I will not yield,
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE VIII	100071	To kiss the ground before young Malcolm’s feet,
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE VIII	100072	And to be baited with the rabble’s curse.
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE VIII	100073	Though Birnam wood be come to Dunsinane,
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE VIII	100074	And thou oppos’d, being of no woman born,
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE VIII	100075	Yet I will try the last. Before my body
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE VIII	100076	I throw my warlike shield: lay on, Macduff;
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE VIII	100077	And damn’d be him that first cries, “Hold, enough!”
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE VIII	100081	Retreat. Flourish. Enter, with drum and colours, Malcolm, old Siward,
+    // THE TRAGEDY OF MACBETH	ACT V	SCENE VIII	100082	Ross, Thanes and Soldiers.
+

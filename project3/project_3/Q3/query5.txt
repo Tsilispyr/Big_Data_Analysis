@@ -1,0 +1,10 @@
+MATCH (s:Scene)-[:HAS_LINE]->(:Line)<-[:SPEAKS]-(c:Character)
+WITH s, count(DISTINCT c) AS charCount
+RETURN s.play AS Play, s.act AS Act, s.name AS SceneName, charCount
+ORDER BY charCount DESC
+LIMIT 1;
+
+
+//Αποτέλεσμα
+    // Play	Act	SceneName	charCount
+    // TROILUS AND CRESSIDA	ACT V	SCENE I	24

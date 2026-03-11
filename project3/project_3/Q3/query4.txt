@@ -1,0 +1,13 @@
+MATCH (c:Character)-[:SPEAKS]->(l:Line)
+RETURN c.name AS Character, c.play AS Play, count(l) AS TotalLines
+ORDER BY TotalLines DESC
+LIMIT 5;
+
+
+//Αποτέλεσμα
+    // Character	Play	TotalLines
+    // HAMLET	THE TRAGEDY OF HAMLET, PRINCE OF DENMARK	1432
+    // IAGO	DUKE OF VENICE	1052
+    // LEONTES	THE TWO NOBLE KINSMEN	1034
+    // KING HENRY	THE LIFE OF KING HENRY THE FIFTH	936
+    // OTHELLO	DUKE OF VENICE	879
