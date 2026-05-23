@@ -1,4 +1,4 @@
-# Ομάδα 1 README
+# README
 
 ## Περιγραφή 
 Ο φάκελος περιέχει ένα project Entity Resolution / Data Matching με Spark (PySpark), με pipeline:
