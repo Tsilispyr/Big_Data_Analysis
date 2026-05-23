@@ -1,7 +1,7 @@
 # 25118_3 README
 
 ## Περιγραφή
-Ο φάκελος 25118_3 έχει τρία μέρη:
+Ο φάκελος έχει τρία μέρη:
 1. `Q1` – Spark Scala parser για αρχείο Shakespeare (`pg100.txt`) και εξαγωγή σε CSV: plays/scenes/characters/lines.
 2. `Q2` – `import.cypher` για εισαγωγή των CSV σε Neo4j γράφο.
 3. `Q3` – 6 queries Cypher (παραδείγματα ανάλυσης στα σενάρια `Hamlet`, `Macbeth`, κλπ.).
