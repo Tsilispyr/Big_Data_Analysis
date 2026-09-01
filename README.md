@@ -114,9 +114,3 @@ sbt run
 - **Scala** 2.12.15 on **sbt** 1.9.7, with **Apache Spark** 3.3.0 (`spark-core`, RDD API) as a library dependency — both Spark sub-projects run `local[*]` in-process, no cluster or separate Spark install required.
 - **Python** + **PySpark** (DataFrame/SQL API), plus `pandas`, `numpy`, and `matplotlib` for the research project's analysis/plots, and `gdown` for dataset retrieval in Colab.
 - Java 17 is supported via the `fork := true` + `--add-opens` JVM flags in both `build.sbt` files (needed because Spark 3.3's reflection-heavy internals require explicit module access on newer JDKs).
-
-## Notes for anyone pushing this to GitHub
-
-- A [.gitignore](.gitignore) is included to keep sbt/Metals build artifacts (`target/`, `.metals*/`, `.scala-build/`, `.bloop/`) — around 160 MB combined — out of version control.
-- Large lecture/assignment PDFs and the benchmark CSV datasets are still tracked by default; if you want a leaner repo, consider Git LFS for the PDFs or excluding `Lectures/` (it duplicates the root-level slides).
-- `Data_analysis_scala/output_Q1i/` is committed as a sample of Spark's output format; the other `output_Q*` folders are produced on demand by running the jobs and are not required to be tracked.
