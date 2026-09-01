@@ -8,10 +8,10 @@ Coursework, assignments, and a group research project for the graduate course **
 
 ## Status at a glance
 
-| # | Topic | Tooling | Deadline | Code in this repo |
+| # | Topic | Tooling  | Code in this repo |
 |---|---|---|---|---|
-| Project 1 | HDFS & MapReduce (word inverted index, frequency count, set difference) | Hadoop, Docker | 2025-11-18 | brief only ([BigData_Assign1_2025-2026.pdf](BigData_Assign1_2025-2026.pdf)) |
-| Project 2 | The same 3 problems, solved with Apache Spark RDDs | Spark (Scala + Python) | 2025-12-10 |  [`Data_analysis_scala/`](Data_analysis_scala) |
+| Project 1 | HDFS & MapReduce (word inverted index, frequency count, set difference) | Hadoop, Docker | brief only ([BigData_Assign1_2025-2026.pdf](BigData_Assign1_2025-2026.pdf)) |
+| Project 2 | The same 3 problems, solved with Apache Spark RDDs | Spark (Scala + Python) |  [`Data_analysis_scala/`](Data_analysis_scala) |
 | Project 3 | Parse Shakespeare into CSVs with Spark, load into Neo4j, write Cypher queries | Spark + Neo4j | see [BigData_Assign3_2025-2026.pdf](BigData_Assign3_2025-2026.pdf) | brief only |
 | Research Project | Distributed Entity Resolution pipeline (blocking, similarity, matching, evaluation) | PySpark (Colab) + Scala/Spark | 2026-02-06 | [`Data_analysis_final/`](Data_analysis_final) |
 
