@@ -1,6 +1,6 @@
 # Big_Data_Analysis
 
-# Big Data Management — Coursework & Research Project
+# Big Data Management - Coursework & Research Project
 
 Coursework, assignments, and a group research project for the graduate course **Διαχείριση Δεδομένων Μεγάλου Όγκου** ("Big Data Management"), 2025–2026. The course covers HDFS/MapReduce, Apache Spark (RDDs and Spark SQL), Neo4j, entity resolution, and similarity search, and this repository holds the assignment briefs, the code written for them, and a group research project on distributed Entity Resolution with Spark.
 
@@ -19,7 +19,7 @@ Coursework, assignments, and a group research project for the graduate course **
 
 ```
 .
-└── Data_analysis_final/                 # Research Project — Entity Resolution with Spark
+└── Data_analysis_final/                 # Research Project - Entity Resolution with Spark
     ├── build.sbt, project/              # sbt project (Scala 2.12.15, Spark 3.3.0)
     ├── src/main/scala/.qodo/final.scala # Local Scala/Spark port of the ER pipeline
     ├── beer_exp_data/exp_data/          # "Beer" benchmark (tableA/B, train/valid/test)
@@ -30,11 +30,11 @@ Coursework, assignments, and a group research project for the graduate course **
         └── Διαχείριση Δεδομένων Μεγάλου Όγκου.pdf  # full report
 ```
 
-Build tool artifacts (`target/`, `.metals*/`, `.scala-build/`, `.bloop/`) are generated locally by sbt/Metals and are excluded via [.gitignore](.gitignore) — they aren't part of the source.
+Build tool artifacts (`target/`, `.metals*/`, `.scala-build/`, `.bloop/`) are generated locally by sbt/Metals and are excluded via [.gitignore](.gitignore) - they aren't part of the source.
 
-## Assignment 2 — Spark RDD word processing (`Data_analysis_scala/`)
+## Assignment 2 - Spark RDD word processing (`Data_analysis_scala/`)
 
-Three problems, each solved two ways per the assignment spec — variant **i** loads each input file into its own RDD via `sc.textFile`, variant **ii** loads the whole `input/` directory into one RDD via `sc.wholeTextFiles`. Solutions exist in parallel Scala and Python (PySpark) versions.
+Three problems, each solved two ways per the assignment spec - variant **i** loads each input file into its own RDD via `sc.textFile`, variant **ii** loads the whole `input/` directory into one RDD via `sc.wholeTextFiles`. Solutions exist in parallel Scala and Python (PySpark) versions.
 
 Input texts (in `input/`, all Project Gutenberg / plain text): `pg100.txt` (*The Complete Works of William Shakespeare*), `pg46.txt` (*A Christmas Carol*), `el_quijote.txt` (*Don Quijote de la Mancha*, Spanish).
 
@@ -46,7 +46,7 @@ Input texts (in `input/`, all Project Gutenberg / plain text): `pg100.txt` (*The
 
 Q1/Q2 use `union` + `reduceByKey` to merge per-file RDDs (variant i) or a single `flatMap` over `wholeTextFiles` (variant ii, which also demonstrates local in-RAM aggregation with `groupBy` in `Q2ii`). Q3 uses RDD `subtract` for set difference; `Q3ii` additionally `.cache()`s the shared `wholeTextFiles` RDD since it's filtered twice.
 
-**Running the Scala version** (sbt, Scala 2.12.15, Spark 3.3.0 as a library dependency — no separate Spark install needed):
+**Running the Scala version** (sbt, Scala 2.12.15, Spark 3.3.0 as a library dependency - no separate Spark install needed):
 
 ```bash
 cd Data_analysis_scala
@@ -64,22 +64,22 @@ python Q1i.py           # or Q1ii.py, Q2i.py, Q2ii.py, Q3i.py, Q3ii.py
 
 `src/main/scala/25118/` is a near-duplicate of the top-level `.scala` files (the zipped submission, named after the student ID) and `src/main/scala/copies/` holds earlier drafts of `Q2ii`/`Q3ii` — kept for reference rather than deleted.
 
-## Research Project — Entity Resolution with Apache Spark (`Data_analysis_final/`)
+## Research Project - Entity Resolution with Apache Spark (`Data_analysis_final/`)
 
 Group project ("Ομάδα 1" / Team 1) implementing an end-to-end, distributed **Entity Resolution (ER)** pipeline: given two duplicate-free tables, find the record pairs that refer to the same real-world entity.
 
 **Pipeline** (implemented with Spark SQL DataFrame functions, no UDFs, so Catalyst can optimize it):
 
-1. **Preprocessing** — lowercase, strip punctuation via regex, remove stopwords, tokenize the concatenation of the chosen match columns.
-2. **Blocking** — `explode()` each record's tokens and `join` table A against table B on shared tokens, so only records sharing at least one token become candidate pairs (avoids the full cartesian product).
-3. **Entity representation** — each record is a bag-of-tokens (set of words) built from its most discriminative columns.
-4. **Similarity** — Jaccard similarity on token sets via `array_intersect` / `array_union`.
-5. **Matching** — pairs with `jaccard > 0.5` are predicted matches (the 0.5 cutoff is justified in the notebook via a threshold sensitivity sweep, see below).
-6. **Evaluation** — ground truth is the union of each dataset's `train.csv` + `test.csv` + `valid.csv` filtered to `label == 1`; precision/recall/F1 are computed against it.
+1. **Preprocessing** - lowercase, strip punctuation via regex, remove stopwords, tokenize the concatenation of the chosen match columns.
+2. **Blocking** - `explode()` each record's tokens and `join` table A against table B on shared tokens, so only records sharing at least one token become candidate pairs (avoids the full cartesian product).
+3. **Entity representation** - each record is a bag-of-tokens (set of words) built from its most discriminative columns.
+4. **Similarity** - Jaccard similarity on token sets via `array_intersect` / `array_union`.
+5. **Matching** - pairs with `jaccard > 0.5` are predicted matches (the 0.5 cutoff is justified in the notebook via a threshold sensitivity sweep, see below).
+6. **Evaluation** - ground truth is the union of each dataset's `train.csv` + `test.csv` + `valid.csv` filtered to `label == 1`; precision/recall/F1 are computed against it.
 
 ### Two parallel implementations
 
-- **PySpark notebook (main deliverable)** — [`Data_analysis_final_Project.ipynb`](<Data_analysis_final_Project.ipynb>) (exported script: `data_analysis_final_project.py`). Built for Google Colab: it `gdown`s two datasets from the [DeepMatcher benchmark collection](https://github.com/anhaidgroup/deepmatcher/blob/master/Datasets.md) — **Fodors-Zagat** (restaurants) and **DBLP-ACM** (bibliographic citations) — then runs the pipeline above, plus:
+- **PySpark notebook (main deliverable)** - [`Data_analysis_final_Project.ipynb`](<Data_analysis_final_Project.ipynb>) (exported script: `data_analysis_final_project.py`). Built for Google Colab: it `gdown`s two datasets from the [DeepMatcher benchmark collection](https://github.com/anhaidgroup/deepmatcher/blob/master/Datasets.md) - **Fodors-Zagat** (restaurants) and **DBLP-ACM** (bibliographic citations) - then runs the pipeline above, plus:
   - A Jaccard-score histogram and a **threshold sensitivity analysis** (thresholds 0.1 → 0.9) with precision/recall/F1 plots per dataset.
   - A **hybrid similarity experiment** (average of Jaccard + normalized Levenshtein on the full concatenated string): recall rose to 97% but precision collapsed to 19%, because Levenshtein over whole records is thrown off by shared boilerplate (e.g. city/address text repeated across unrelated restaurants). The notebook documents this and reverts to plain Jaccard.
   - A written report (in Greek, embedded as markdown cells) covering design rationale and a per-dataset discussion of the sensitivity-analysis results.
