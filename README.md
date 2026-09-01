@@ -9,7 +9,7 @@ Coursework, assignments, and a group research project for the graduate course **
 ## Status at a glance
 
 | # | Topic | Tooling  | Code in this repo |
-|---|---|---|---|---|
+|---|---|---|---|
 | Project 1 | HDFS & MapReduce (word inverted index, frequency count, set difference) | Hadoop, Docker | brief only ([BigData_Assign1_2025-2026.pdf](BigData_Assign1_2025-2026.pdf)) |
 | Project 2 | The same 3 problems, solved with Apache Spark RDDs | Spark (Scala + Python) |  [`Data_analysis_scala/`](Data_analysis_scala) |
 | Project 3 | Parse Shakespeare into CSVs with Spark, load into Neo4j, write Cypher queries | Spark + Neo4j | see [BigData_Assign3_2025-2026.pdf](BigData_Assign3_2025-2026.pdf) | brief only |
